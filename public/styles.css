@@ -1,0 +1,124 @@
+canvas {
+ width: 500px;
+ height: 400px;
+ margin: auto;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-container2{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2vw;
+  padding: 2vw;
+}
+
+.dashboard{
+  background-color: #F1F1F1;
+  padding:2vw;
+
+}
+h6{
+  font-size: 0.75rem;
+}
+.dashboard h5{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.col-md-3{
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 2vw;
+  margin-bottom: min(2vw,10px)
+
+}
+
+.col-md-3.h6{
+  display: block;
+}
+
+.inputcontainer{
+margin-left: 5vw!important;
+  margin-right:5vw!important;
+}
+
+.returns{
+  margin-top: 0.5vw;
+  background-color: #F1F1F1;
+  text-align: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding: 1vw;
+  margin-bottom: 2vw;
+
+}
+
+
+.loader,
+        .loader:after {
+            border-radius: 50%;
+            width: 15em;
+            height: 15em;
+        }
+        .loader {
+            margin: 20vh auto 5vh auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+            border-left: 1.1em solid black;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load8 1.1s infinite linear;
+            animation: load8 1.1s infinite linear;
+        }
+        @-webkit-keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        #loadingDiv {
+            position:absolute;
+            top:10vh;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:white;
+        }
+
+    input,input::-webkit-input-placeholder {
+        font-size: min(2vw,10px) ;
+    }
+
+        @media only screen and (max-width: 767px) {
+  canvas {
+    width:90%!important;
+  }}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: auto!important;
+}

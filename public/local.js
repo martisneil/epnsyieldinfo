@@ -72,7 +72,7 @@ $('#sliderValue').val(user_duration);
 var reward=30000;
 for (var i = 0; i < epochArrayLatest.length; i++) {
   labels[i]=i+1;
-  data.datasets[0].data[i]=(100*52*reward/epochArrayLatest[i]).toFixed(2);
+  data.datasets[0].data[i]=(100*26*(2*reward-5100)/epochArrayLatest[i]).toFixed(2);
   reward=reward-100;
 }
   const myChart = new Chart($('#myChart'),config);

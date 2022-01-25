@@ -82,7 +82,9 @@ async function yeildMetrics(populateObj){
   let read2 =await contract2.balanceOf(epnsstakingAddress);
   var currentStakeCoins=web3.utils.fromWei(read2.toString());
   populateObj.poolSize=Math.floor(currentStakeCoins);
-  populateObj.currentAPR=(100*52*(30000-populateObj.currentEpochID*100)/currentStakeCoins).toFixed(2);
+  let currentReward=30000-(populateObj.currentEpochID*100);
+  // use summation of reducing reward arithemtic progression for APR calculation
+  populateObj.currentAPR=(100*26*(2*currentReward-5100)/currentStakeCoins).toFixed(2);
   console.log("total staked coins: "+ populateObj.poolSize);
   console.log("current APR: "+populateObj.currentAPR);
 }
